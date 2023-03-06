@@ -163,8 +163,7 @@ class _InAppState extends State<InApp> {
                         ),
                       ),
                     ),
-                    FlatButton(
-                      color: Colors.orange,
+                    ElevatedButton(
                       onPressed: () {
                         print("---------- Buy Item Button Pressed");
                         this._requestPurchase(item);
@@ -243,9 +242,7 @@ class _InAppState extends State<InApp> {
                         width: buttonWidth,
                         height: 60.0,
                         margin: EdgeInsets.all(7.0),
-                        child: FlatButton(
-                          color: Colors.amber,
-                          padding: EdgeInsets.all(0.0),
+                        child: ElevatedButton(
                           onPressed: () async {
                             print("---------- Connect Billing Button Pressed");
                             await FlutterInappPurchase.instance.initialize();
@@ -266,9 +263,7 @@ class _InAppState extends State<InApp> {
                         width: buttonWidth,
                         height: 60.0,
                         margin: EdgeInsets.all(7.0),
-                        child: FlatButton(
-                          color: Colors.amber,
-                          padding: EdgeInsets.all(0.0),
+                        child: ElevatedButton(
                           onPressed: () async {
                             print("---------- End Connection Button Pressed");
                             await FlutterInappPurchase.instance.finalize();
@@ -306,9 +301,7 @@ class _InAppState extends State<InApp> {
                             width: buttonWidth,
                             height: 60.0,
                             margin: EdgeInsets.all(7.0),
-                            child: FlatButton(
-                              color: Colors.green,
-                              padding: EdgeInsets.all(0.0),
+                            child: ElevatedButton(
                               onPressed: () {
                                 print("---------- Get Items Button Pressed");
                                 this._getProduct();
@@ -328,9 +321,7 @@ class _InAppState extends State<InApp> {
                             width: buttonWidth,
                             height: 60.0,
                             margin: EdgeInsets.all(7.0),
-                            child: FlatButton(
-                              color: Colors.green,
-                              padding: EdgeInsets.all(0.0),
+                            child: ElevatedButton(
                               onPressed: () {
                                 print(
                                     "---------- Get Purchases Button Pressed");
@@ -351,9 +342,7 @@ class _InAppState extends State<InApp> {
                             width: buttonWidth,
                             height: 60.0,
                             margin: EdgeInsets.all(7.0),
-                            child: FlatButton(
-                              color: Colors.green,
-                              padding: EdgeInsets.all(0.0),
+                            child: ElevatedButton(
                               onPressed: () {
                                 print(
                                     "---------- Get Purchase History Button Pressed");
